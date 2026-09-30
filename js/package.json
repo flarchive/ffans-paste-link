@@ -1,0 +1,42 @@
+{
+  "name": "@ffans/paste-link",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/jquery": "^3.5.10",
+    "flarum-tsconfig": "^2.0.0",
+    "flarum-webpack-config": "^3.0.0",
+    "flarum-webpack-config-v1": "npm:flarum-webpack-config@^2.0.2",
+    "oxfmt": "^0.66.0",
+    "typescript": "^5.0.0",
+    "typescript-coverage-report": "0.8.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "analyze": "cross-env ANALYZER=true npm run build",
+    "format": "cd .. && oxfmt --config js/.oxfmtrc.json js less",
+    "format-check": "cd .. && oxfmt --config js/.oxfmtrc.json --check js less",
+    "clean-typings": "npx rimraf dist-typings && mkdir dist-typings",
+    "check-typings": "tsc --noEmit --emitDeclarationOnly false",
+    "check-typings-coverage": "typescript-coverage-report",
+    "test": "webpack --mode production && node --test tests/*.test.cjs"
+  },
+  "type": "module",
+  "volta": {
+    "node": "26.8.1",
+    "pnpm": "12.8.1"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "26.8.1"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.8.1"
+    }
+  }
+}

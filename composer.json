@@ -1,0 +1,78 @@
+{
+    "name": "ffans/paste-link",
+    "description": "Turn selected text into a Markdown link by pasting a URL in Flarum's default composer.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "keywords": [
+        "flarum",
+        "extension",
+        "link",
+        "paste",
+        "markdown",
+        "parser"
+    ],
+    "homepage": "https://github.com/ffans/paste-link",
+    "support": {
+        "issues": "https://github.com/ffans/paste-link/issues",
+        "source": "https://github.com/ffans/paste-link",
+        "forum": "https://discuss.flarum.org/d/39950",
+        "forumZh": "https://discuss.flarum.org.cn/d/16574"
+    },
+    "authors": [
+        {
+            "name": "Golden",
+            "email": "thatsgolden@outlook.com",
+            "homepage": "https://github.com/thatsgolden",
+            "role": "Developer"
+        },
+        {
+            "name": "FFans",
+            "homepage": "https://github.com/FFans"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.8 || ^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FFans\\PasteLink\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FFans Paste Link",
+            "category": "feature",
+            "optional-dependencies": [],
+            "icon": {
+                "name": "fas fa-link",
+                "color": "#ffffff",
+                "backgroundColor": "#357eff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": false,
+                "typescript": true,
+                "bundlewatch": false,
+                "frontendTesting": false,
+                "backendTesting": false,
+                "phpstan": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        },
+        "volta": {
+            "php": "8.3.33"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
