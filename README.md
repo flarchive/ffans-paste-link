@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of ffans/paste-link.** Not for installation: use [Packagist](https://packagist.org/packages/ffans/paste-link) or the [upstream repository](https://github.com/FFans/paste-link).
 
-**0** versions archived · Latest: [`v1.0.0`](https://github.com/flarchive/ffans-paste-link/tree/archive/v1.0.0) · License: `MIT` · Flarum: `^1.8 || ^2.0`
+**1** versions archived · Latest: [`v1.0.0`](https://github.com/flarchive/ffans-paste-link/tree/archive/v1.0.0) · License: `MIT` · Flarum: `^1.8 || ^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2026-09-30 | `^1.8 || ^2.0` | [Browse](https://github.com/flarchive/ffans-paste-link/tree/archive/v1.0.0) |
 
 Catalog entry: [packages/ffans-paste-link.json](https://github.com/flarchive/archive-index/blob/main/packages/ffans-paste-link.json)
 
